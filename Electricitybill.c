@@ -21,13 +21,13 @@ int main()
         bill = unit * 40;
     }
 
-    else if (unit <= 200)
+    else if (unit <= 300)
     {
         bill = 4000 + ((unit - 100) * 50);
     }
     else if (unit >= 300)
     {
-        bill = 4000 + 5000 + ((unit - 200) * 60);
+        bill = 4000 + 10000 + ((unit - 200) * 60);
     }
     total = bill + charge;
     printf("The bill is %.3f", (total));
